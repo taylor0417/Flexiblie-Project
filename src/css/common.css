@@ -1,0 +1,15 @@
+/* 公共样式 */
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+html {
+    background: #ff50ac;
+}
+a {
+    text-decoration: none;
+}
+
+

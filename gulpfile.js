@@ -2,6 +2,8 @@ var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var csso = require('gulp-csso');
+var postcss = require('gulp-postcss');
+var px2rem = require('postcss-px2rem');
 const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
@@ -28,7 +30,16 @@ gulp.task('imagemin', function () {
         .pipe(gulp.dest('./dist/images'))
 });
 
-gulp.task('default',['css', 'html', 'js', 'imagemin',]);
+gulp.task('postcss', function () {
+    var processors = [
+    px2rem({remUnit:75})
+    ];
+    return gulp.src('./src/css/mobile.css')
+        .pipe(postcss(processors))
+        .pipe(gulp.dest('./dist/css/'))
+})
+
+gulp.task('default',['postcss','css', 'html', 'js', 'imagemin' ]);
 
 gulp.task('dev', ['default'], function() {
     browserSync.init({

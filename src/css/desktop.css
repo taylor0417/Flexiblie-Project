@@ -1,22 +1,9 @@
-/* 公共样式 */
-.pull-left {
-    float: left;
-}
-.pull-right {
-    float: right;
-}
-html {
-    background: #ff50ac;
-}
-a {
-    text-decoration: none;
-}
-
 /* 桌面端 */
 .desktop {}
     .desktop {
         max-width: 1200px;
         margin: 0 auto;
+        font-size: 16px;
     }
     .mobile {
         display: none;
@@ -52,12 +39,3 @@ a {
         font-size: 16px;
         font-weight: 700;
     }
-/* 媒体查询 移动端 */
-@media (max-width:768px) {
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: block;
-    }
-}
