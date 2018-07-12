@@ -1,3 +1,18 @@
-body {
-    background: red;
+/* 桌面端 */
+.desktop {}
+    .desktop {
+        
+    }
+    .mobile {
+        display: none;
+    }
+
+/* 媒体查询 移动端 */
+@media (max-width:768px) {
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
 }
