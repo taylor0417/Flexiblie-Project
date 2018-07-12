@@ -8,34 +8,167 @@
     .mobile {
         display: none;
     }
-    .desktop-header {
-        overflow: hidden;
-        height: 86px;
-        line-height: 86px;
-        max-width: 1200px;
-    }
-    .desktop-header nav ul li {
-        display: inline-block;
-        box-sizing: border-box;
-        padding: 0 13px;
-    }
-    .desktop-header a {
-        color: #fff;
-    }
-    .desktop-nav-active {
-        border-top: 4px solid #fff;
-    }
-    .desktop-header-logo {
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        margin-right: 5px;
-    }
-    .desktop-header-l {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        color: #fff;
-        font-size: 16px;
-        font-weight: 700;
-    }
+    .desktop-header {}
+        .desktop-header {
+            overflow: hidden;
+            height: 86px;
+            line-height: 86px;
+            max-width: 1200px;
+        }
+        .desktop-header nav ul li {
+            display: inline-block;
+            box-sizing: border-box;
+            padding: 0 13px;
+        }
+        .desktop-header a {
+            color: #fff;
+        }
+        .desktop-nav-active {
+            border-top: 4px solid #fff;
+        }
+        .desktop-header-logo {
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .desktop-header-l {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+    .desktop-content {}
+        .desktop-content {
+            display: table;
+            margin: 0 auto;
+            width: 850px;
+        }
+        .desktop-content-download, .desktop-content-preview {
+            display: table-cell;
+            width: 50%;
+            vertical-align: middle;
+        }
+        .desktop-content-download {
+            padding-top: 50px;
+        }
+        .slogan-top {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .slogan-top img {
+            width: 222px;
+            height: 87px;
+            margin-bottom: 10px;
+        }
+        .slogan-top p {
+            opacity: 0.5;
+            font-size: 16px;
+            color: #fff;
+            line-height: 24px;
+        }
+        .slogan-bottom, .slogan-top {
+            display: inline-block;
+        }
+        .slogan-bottom {
+            text-align: left;
+            position: relative;
+        }
+        .slogan-bottom::before {
+            position: absolute;
+            content: "";
+            left: 0px;
+            width: 7px;
+            height: 100%;
+            background: #fff;
+            border-radius: 100px;
+        }
+        .slogan-bottom p {
+            margin-left: 22px;
+            color: #fff;
+        }
+        .slogan-bottom p:first-child {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .slogan-bottom p:last-child {
+            font-size: 16px;
+        }
+        .desktop-btns {
+            margin-top: 60px;
+        }
+        .desktop-btn {
+            width: 170px;
+            height: 50px;
+            line-height: 50px;
+            display: inline-block;
+            background: #fff;
+            box-shadow: 0 3px 10px 0 rgba(0,0,0,0.2);
+            border-radius: 100px;
+            text-align: center;
+            cursor: pointer;
+            box-sizing: border-box;
+            font-size: 16px;
+            font-weight: 700;
+        }
+        .desktop-btns .desktop-btn:first-child {
+            margin-right: 30px;
+        }
+        .desktop-btn-active {
+            background-image: linear-gradient(-90deg, #8450ff 1%,  #33aeff 100%);
+            color: #fff;
+        }
+        .desktop-btn-active i:first-child {
+            background: url('../images/demo-appstore-logo-white.png') no-repeat;
+        }
+        .desktop-btn-logo {
+            width: 20px;
+            height: 20px;
+            background-size: 100% 100%!important;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+        .appstore {
+            background: url('../images/demo-appstore-logo.png') no-repeat;
+        }
+        .googleplay {
+            background: url('../images/demo-googleplay-logo.png') no-repeat;
+        }
+        .desktop-content-preview {
+            text-align: right;
+
+        }
+        .desktop-content-preview .phone {
+            display: inline-block;
+            width: 270px;
+            height: 486px;
+            position: relative;
+            top: 20px;
+            background: url('../images/demo-phone.png') no-repeat;
+            background-size: cover;
+        }
+        .phone img {
+            position: absolute;
+            left: 36px;
+            top: 57px;
+            width: 201px;
+            height: 357px;
+        }
+        .play-btn {
+            position: absolute;
+            background: url('../images/demo-play-btn.png') no-repeat;
+            background-size: cover;
+            width: 70px;
+            height: 70px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 45%;
+            cursor: pointer;
+        }
+
