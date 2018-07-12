@@ -31,18 +31,18 @@
         height: 1.12rem;
         margin-right: 0.266667rem;
     }
-    .mobile-top-bar .left .mobile-slogan {
+    .mobile-top-bar .left .slogan {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .mobile-top-bar .left .mobile-slogan p:first-child {
+    .mobile-top-bar .left .slogan p:first-child {
         color: #fb4282;
         font-size: 0.373333rem;
         font-weight: 700;
         margin-bottom: 0.2rem;
     }
-    .mobile-top-bar .left .mobile-slogan p:last-child {
+    .mobile-top-bar .left .slogan p:last-child {
         font-size: 0.24rem;
         color: #cacaca;
     }
@@ -57,5 +57,62 @@
         text-align: center;
         font-weight: 700;
         font-size: 0.373333rem;
+    }
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3.2rem;
+        margin-bottom: 1.066667rem;
+    }
+    .mobile-logo .left {
+        margin-right: 0.266667rem;
+    }
+    .mobile-logo .left img {
+        width: 2.133333rem;
+        height: 2.133333rem;
+    }
+    .mobile-logo .right {
+        font-size: 0.213333rem;
+    }
+    .mobile-logo .right p:last-child {
+        color: #fff;
+        opacity: 0.7;
+    }
+    
+    .mobile-logo .right img {
+        width: 2.666667rem;
+        height: 1.066667rem;
+        margin-bottom: 0.2rem;
+    }
+    .mobile-slogan {
+        color: #fff;
+        font-weight: 700;
+        text-align: center;
+    }
+    .slogan-1 {
+        font-size: 0.8rem;
+        margin-bottom: 0.32rem;
+    }
+    .slogan-1 p:first-child {
+        margin-bottom: 0.133333rem;
+    }
+    .slogan-2 {
+        font-size: 0.373333rem;
+    }
+    .mobile-download {
+        background: #fff;
+        box-shadow: 0 5px 20px 0 rgba(0,0,0,0.2);
+        border-radius: 2.0rem;
+        width: 8.746667rem;
+        height: 1.6rem;
+        line-height: 1.6rem;
+        text-align: center;
+        font-size: 0.56rem;
+        margin: 0 auto;
+        color: #fb3282;
+        margin-bottom: 1.173333rem;
+        font-weight: 700;
+        margin-top: 1.0rem;
     }
 }
